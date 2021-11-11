@@ -33,5 +33,10 @@ function calculateApr(month) {
     const profit2 = ((100*months[month])/12)
     amount.innerHTML = '$ '+ (10000 + profit)
     apr.innerHTML =  (months[month])
-    cost.innerHTML = Math.floor(profit2) 
+    cost.innerHTML = Math.floor(profit2)  
 }
+
+
+var button1,result,count=0;
+button1=document.querySelector('#btn1');
+result=document.querySelector()
