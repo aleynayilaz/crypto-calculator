@@ -30,7 +30,8 @@ button4.onclick= function() {
 }
 function calculateApr(month) {
     const profit= month*((100*months[month])/12)
+    const profit2 = ((100*months[month])/12)
     amount.innerHTML = '$ '+ (10000 + profit)
-    apr.innerHTML =  ((100*months[month])/12)
-    cost.innerHTML = profit
+    apr.innerHTML =  (months[month])
+    cost.innerHTML = Math.floor(profit2) 
 }
