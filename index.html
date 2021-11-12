@@ -1,112 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crypto</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link href="styles.css" rel="stylesheet" />
-</head>
-<body class="m-0 p-0 bg-red-100">
-    <nav class="bg-white shadow ">
-        <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap ">
+  </head>
+
+  <body class="m-0 p-0 bg-red-100">
+    <div class="w-screen h-screen">
+      <nav class="bg-white shadow">
+        <div
+          class="
+            w-full
+            container
+            mx-auto
+            p-4
+            flex flex-wrap
+            items-center
+            md:flex-no-wrap
+          "
+        >
           <div class="mr-4 md:mr-8">
             <a href="#" rel="">
-             <img src="img/bcn.svg">
+              <img src="img/bcn.svg" />
             </a>
           </div>
-          <div class="ml-auto md:hidden"></div>
           <div class="w-full md:w-auto md:flex-grow md:flex md:items-center">
-            <ul class="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0 text-gray-400">
+            <ul
+              class="
+                flex flex-col
+                mt-4
+                -mx-4
+                pt-4
+                border-t
+                md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4
+                lg:mr-8
+                md:border-0
+                text-gray-400
+              "
+            >
               <li>
-                <a class="px-4 py-1 md:p-2 lg:px-4 text-blue-800 font-bold" href="#" title="Link">Home</a>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 text-blue-800 font-bold"
+                  href="#"
+                  title="Link"
+                  >Home</a
+                >
               </li>
               <li>
-                <a class="px-4 py-1 md:p-2 lg:px-4 font-bold " href="#" title="Link">Earn</a>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 font-bold"
+                  href="#"
+                  title="Link"
+                  >Earn</a
+                >
               </li>
               <li>
-                <a class="px-4 py-1 md:p-2 lg:px-4 font-bold" href="#" title="Link">Borrow</a>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 font-bold"
+                  href="#"
+                  title="Link"
+                  >Borrow</a
+                >
               </li>
               <li>
-                <a class="px-4 py-1 md:p-2 lg:px-4 font-bold" href="#" title="Link">Pay</a>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 font-bold"
+                  href="#"
+                  title="Link"
+                  >Pay</a
+                >
               </li>
               <li>
-                <a class="px-4 py-1 md:p-2 lg:px-4 font-bold" href="#" title="Link">CELtoken</a>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 font-bold"
+                  href="#"
+                  title="Link"
+                  >CELtoken</a
+                >
               </li>
             </ul>
-            <ul class="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 text-gray-400">
-                <li>
-                  <a class="px-4 py-1 md:p-2 lg:px-4 font-bold" href="#" title="Link">About</a>
-                </li>
-                <li>
-                  <a class="px-4 py-1 md:p-2 lg:px-4 font-bold" href="#" title="Link">Contact</a>
-                </li>
-                <a class="shadow-lg border-2 border-yellow-200 py-2 px-4 rounded-full font-bold text-blue-800 hover:bg-pink-400" href="">Download the app</a>
+            <ul
+              class="
+                flex flex-col
+                mt-4
+                -mx-4
+                pt-4
+                border-t
+                md:flex-row
+                md:items-center
+                md:mx-0
+                md:ml-auto
+                md:mt-0
+                md:pt-0
+                md:border-0
+                text-gray-400
+              "
+            >
+              <li>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 font-bold"
+                  href="#"
+                  title="Link"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="px-4 py-1 md:p-2 lg:px-4 font-bold"
+                  href="#"
+                  title="Link"
+                  >Contact</a
+                >
+              </li>
+              <a
+                class="
+                  shadow-lg
+                  border-2 border-yellow-200
+                  py-2
+                  px-4
+                  rounded-full
+                  font-bold
+                  text-blue-800
+                  hover:bg-pink-400
+                "
+                href=""
+                >Download the app</a
+              >
             </ul>
           </div>
         </div>
       </nav>
-      <div class="flex flex-col">
-           <div class="flex group w-full mt-10 sm:w-1/2 mx-auto p-4 bg-white border-b border-gray-300">
-          <div class="pt-4"> <span class="text-2xl text-pink-600 font-bold">$10,000 USD</span>
+      <div class="w-full flex flex-col">
+        <div class="w-full lg:w-1/2 mx-auto bg-white my-10">
+          <div
+            class="
+              flex flex-col
+              justify-between
+              items-center
+              lg:flex-row
+              w-full
+              border-b border-gray-300
+              p-4
+            "
+          >
+            <p class="text-2xl text-pink-600 font-bold">$10,000 USD</p>
+            <div class="flex flex-col lg:flex-row items-center">
+              <p class="text-gray-400 mr-2 text-sm">Loan term in months</p>
+              <div
+                class="
+                  rounded-full
+                  text-white
+                  bg-gradient-to-r
+                  from-purple-700
+                  via-pink-700
+                  to-red-700
+                "
+              >
+                <button
+                  id="btn1"
+                  class="
+                    w-12
+                    h-12
+                    transform
+                    rounded-full
+                    focus:text-pink-700 focus:bg-white
+                  "
+                >
+                  3
+                </button>
+                <button
+                  id="btn2"
+                  class="
+                    w-12
+                    h-12
+                    transform
+                    rounded-full
+                    focus:text-pink-700 focus:bg-white
+                  "
+                >
+                  6
+                </button>
+                <button
+                  id="btn3"
+                  class="
+                    w-12
+                    h-12
+                    transform
+                    rounded-full
+                    focus:text-pink-700 focus:bg-white
+                  "
+                >
+                  12
+                </button>
+                <button
+                  id="btn4"
+                  class="
+                    w-12
+                    h-12
+                    transform
+                    rounded-full
+                    focus:text-pink-700 focus:bg-white
+                  "
+                >
+                  24
+                </button>
+              </div>
+            </div>
           </div>
-      <div class="flex flex-col md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 text-gray-400 ">
-          <p class="mr-2 text-sm">Loan term in months</p> 
-          <div class="m-2 p-1 transform rounded-full font-bold text-white bg-gradient-to-r from-purple-700 via-pink-700 to-red-700">
-          <button id="btn1" class="p-3 px-5 transform rounded-3xl focus:text-pink-700 focus:bg-white deneme-trans">3</button>
-          <button id="btn2" class="p-3 px-5 transform rounded-3xl focus:text-pink-700 focus:bg-white">6</button>
-          <button id="btn3" class="p-3 px-5 transform rounded-3xl focus:text-pink-700 focus:bg-white">12</button>
-          <button id="btn4" class="p-3 px-5 transform  rounded-3xl focus:text-pink-700 focus:bg-white">24</button>
+          <div
+            class="
+              w-full
+              p-4
+              flex flex-col
+              lg:flex-row lg:items-center lg:justify-between
+            "
+          >
+            <div class="flex flex-col">
+              <p class="text-gray-400 text-xs font-bold">Collateral needed</p>
+              <p class="text-2xl text-black font-bold">26.871016 ETH</p>
+            </div>
+            <div
+              class="
+                flex flex-col
+                lg:flex-row lg:items-center lg:justify-between
+                text-gray-400
+              "
+            >
+              <div class="flex items-center" href="#" rel="">
+                <img class="" src="img/etr.svg" />
+                <p class="mx-1 text-sm font-bold text-black">Ethereum</p>
+                <span class="text-sm mx-1">ETH</span>
+                <p class="text-sm">Loan to value(LTV)</p>
+              </div>
+              <div
+                class="
+                  rounded-l-full rounded-r-full
+                  text-black
+                  shadow-lg
+                  flex
+                  justify-start
+                  items-center
+                "
+              >
+                <p class="mx-1 p-2">50%</p>
+                <p class="mx-1 p-2">60%</p>
+                <p class="mx-1 p-2">70%</p>
+                <p class="mx-1 p-2">80%</p>
+              </div>
+            </div>
           </div>
-      </div>
-  </div>
-      <div class="flex group w-full sm:w-1/2 mx-auto p-3 bg-white border-b border-gray-300  ">
-        <div class="flex flex-col justify-center items-start text-center md:text-left ">
-           <p class="text-gray-400 text-xs font-bold ">Collateral needed</p>
-           <p class="text-2xl text-black font-bold ">26.871016 ETH</p>
         </div>
-    <div class="flex items-center text-gray-400  mt-2 ml-40">
-      <div class="mr-1 mr-2 flex ml-2 flex-row"href="#" rel="">
-        <img class=""src="img/etr.svg">
-        <p class="mr-1 pt-2 text-sm font-bold text-black">Ethereum</p> <span class="text-sm pt-2 ">ETH</span>
-      </div>
-        <p class="text-sm">Loan to value(LTV)</p> 
-        <div class="m-2 p-1 transform rounded-full text-black shadow-lg  ml-3 rounded-3xl">
-        <button id=" " class="p-2 px-2 transform rounded-3xl focus:shadow-lg focus:text-pink-700 focus:bg-white">50%</button>
-        <button id="" class="p-3 px-5 transform rounded-3xl focus:shadow-lg focus:text-pink-700 focus:bg-white">60%</button>
-        <button id="" class="p-3 px-5 transform rounded-3xl focus:shadow-lg focus:text-pink-700 focus:bg-white">70%</button>
-        <button id="" class="p-3 px-5 transform rounded-3xl focus:shadow-lg focus:text-pink-700 focus:bg-white">80%</button>
+        <div class="menu">
+          <p
+            class="
+              text-center
+              lg:text-xl
+              text-xs
+              font-bold
+              text-transparent
+              bg-clip-text bg-gradient-to-br
+              from-purple-700
+              to-red-700
+            "
+          >
+            Total interest when paid in CEL Token
+          </p>
+          <span
+            id="amount"
+            class="
+              p-4
+              flex
+              w-full
+              justify-center
+              lg:text-9xl
+              text-5xl
+              font-bold
+              text-transparent
+              bg-clip-text bg-gradient-to-br
+              from-purple-700
+              to-red-700
+            "
+            >$7,644.47</span
+          >
+          <div class="flex lg:flex-row flex-col justify-center">
+            <div class="flex flex-col justify-center mx-16 my-6">
+              <p class="text-center lg:text-l text-sm font-bold">APR%</p>
+              <span
+                id="changeapr"
+                class="text-center lg:text-5xl text-3xl font-bold"
+                >4.5%</span
+              >
+            </div>
+            <div class="flex flex-col justify-center">
+              <p class="text-center lg:text-l text-sm font-bold mx-12">
+                Cost per month
+              </p>
+              <span
+                id="changecost"
+                class="text-center lg:text-5xl text-3xl font-bold"
+                >$336.58</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="flex flex-row justify-center my-4 transform rounded-full">
+        <div class="w-max shadow-lg bg-opacity-10 rounded-full">
+          <button
+            class="
+              py-3
+              px-3
+              transform
+              rounded-full
+              focus:shadow-lg
+              text-pink-700
+              focus:bg-white
+            "
+          >
+            Paid in CEL
+          </button>
+          <button
+            class="
+              py-3
+              px-5
+              transform
+              rounded-full
+              focus:shadow-lg
+              text-pink-700
+              focus:bg-white
+            "
+          >
+            Pain in Cash
+          </button>
+        </div>
+      </div>
+      <div class="flex lg:justify-end justify-evenly mx-20 p-2">
+        <p
+          class="
+            rounded-full
+            h-24
+            w-24
+            flex
+            items-center
+            justify-center
+            border-pink-700 border-2
+            font-bold
+          "
+        >
+          Get started
+        </p>
+      </div>
     </div>
-    </div>
-    <div class="menu">
-      <p class="text-center p-2 m-12 text-l font-bold text-transparent bg-clip-text bg-gradient-to-br from-purple-700 to-red-700 ">Total interest when paid in CEL Token</p>
-      <span id="amount" class="flex justify-center m-6 text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-purple-700 to-red-700">$7,644.47</span>
-     <div class="flex flex-row justify-center pt-10">
-      <div class="flex flex-col justify-center mr-40">
-        <p class="text-center m-6 text-l font-bold">APR%</p>
-        <span id="changeapr" class="text-center text-5xl font-bold">4.5%</span>
-      </div>
-      <div class="flex flex-col justify-center">
-        <p class="text-center m-6 text-l font-bold">Cost per month</p>
-        <span id="changecost" class="text-center text-5xl font-bold">$336.58</span>
-      </div>
-     </div>
-</div>
-   </div>
-      </div>
-      <div class="m-2 p-12 justify-center flex flex-row transform  rounded-full  ">
-        <div class="w-max shadow-lg bg-opacity-10 rounded-3xl">
-            <button class="p-3 px-5 transform rounded-full focus:shadow-lg text-pink-700 focus:bg-white">Paid in CEL</button>
-            <button class="p-3 px-5 transform rounded-full focus:shadow-lg text-pink-700 focus:bg-white">Pain in Cash</button>
-         </div> 
-        </div>
-        <div class="flex justify-end mr-36">
-          <p class="rounded-full h-24 w-24 flex items-center justify-center border-pink-700 border-2 font-bold">Get started</p>
-
-        </div>
-   
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

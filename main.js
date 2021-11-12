@@ -37,6 +37,6 @@ function calculateApr(month) {
 }
 
 
-var button1,result,count=0;
-button1=document.querySelector('#btn1');
-result=document.querySelector()
+// var button1,result,count=0;
+// button1=document.querySelector('#btn1');
+// result=document.querySelector()
