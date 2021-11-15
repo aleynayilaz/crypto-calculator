@@ -13,3 +13,22 @@
   background-color: white;
   color: rgb(241, 20, 57);
 }
+/* .trans {
+  animation-name: trans;
+  animatiom-delay: 0s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes trans{
+  from{
+    background-color: tomato;
+  }
+  to{
+    background-color: :violet;
+  }
+} */
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
