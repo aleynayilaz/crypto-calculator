@@ -6,6 +6,32 @@
   cursor: pointer;
   font-size: 18px;
 }
+@keyframes example {
+  0% {
+    transform: translateX(1%);
+  }
+  50% {
+    transform: translateX(99%);
+  }
+  100% {
+    transform: translateX(1%);
+  }
+}
+
+/* The element to apply the animation to */
+#MYDIV {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  animation-duration: 2s;
+  position: absolute;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
 /* Style the active class, and buttons on mouse-over */
 .active,

@@ -17,16 +17,28 @@ const months = {
 
 button1.onclick = function () {
   calculateApr(3);
+  animate();
 };
 button2.onclick = function () {
   calculateApr(6);
+  animate();
 };
 button3.onclick = function () {
   calculateApr(12);
+  animate();
 };
 button4.onclick = function () {
   calculateApr(24);
+  animate();
 };
+let count = 1;
+function animate() {
+  mydiv.style.animationName = "example";
+  setTimeout(() => {
+    mydiv.style.animationName = null;
+  }, 2000);
+}
+
 function calculateApr(month) {
   const profit = month * ((100 * months[month]) / 12);
   const profit2 = (100 * months[month]) / 12;
@@ -35,15 +47,17 @@ function calculateApr(month) {
   cost.innerHTML = Math.floor(profit2);
 }
 
+const mydiv = document.getElementById("MYDIV");
 const header = document.getElementById("myDIV");
 const btns = header.getElementsByClassName("btn");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+
+// btns.forEach((btn) => {
+//   btn.addEventListener("click", function () {
+//     let current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// });
 
 const colors = [
   "#3CC157",

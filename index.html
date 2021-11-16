@@ -12,8 +12,8 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
 
-  <body class="trans body m-0 p-0 bg-red-100">
-    <div class="w-screen h-screen">
+  <body class="trans body m-0 p-0 bg-red-100 overflow-hidden">
+    <div class="w-screen h-screen overflow-hidden">
       <nav class="bg-white shadow">
         <div
           class="
@@ -137,7 +137,8 @@
           </div>
         </div>
       </nav>
-      <div class="w-full flex flex-col">
+      <div id="MYDIV"></div>
+      <div id="slide" class="w-full flex flex-col">
         <div class="w-full lg:w-1/2 mx-auto bg-white my-10">
           <div
             class="
@@ -181,7 +182,6 @@
                   id="btn2"
                   class="
                     btn
-                    active
                     w-12
                     h-12
                     transform
@@ -316,54 +316,55 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex flex-row justify-center my-4 transform rounded-full">
-        <div class="w-max shadow-lg bg-opacity-10 rounded-full">
-          <button
+        <div class="flex flex-row justify-center my-4 transform rounded-full">
+          <div class="w-max shadow-lg bg-opacity-10 rounded-full">
+            <button
+              class="
+                py-3
+                px-3
+                transform
+                rounded-full
+                focus:shadow-lg
+                text-pink-700
+                focus:bg-white
+              "
+            >
+              Paid in CEL
+            </button>
+            <button
+              class="
+                py-3
+                px-5
+                transform
+                rounded-full
+                focus:shadow-lg
+                text-pink-700
+                focus:bg-white
+              "
+            >
+              Pain in Cash
+            </button>
+          </div>
+        </div>
+        <div class="flex lg:justify-end justify-evenly mx-20 p-2">
+          <p
             class="
-              py-3
-              px-3
-              transform
               rounded-full
-              focus:shadow-lg
-              text-pink-700
-              focus:bg-white
+              h-24
+              w-24
+              flex
+              items-center
+              justify-center
+              border-pink-700 border-2
+              font-bold
             "
           >
-            Paid in CEL
-          </button>
-          <button
-            class="
-              py-3
-              px-5
-              transform
-              rounded-full
-              focus:shadow-lg
-              text-pink-700
-              focus:bg-white
-            "
-          >
-            Pain in Cash
-          </button>
+            Get started
+          </p>
         </div>
       </div>
-      <div class="flex lg:justify-end justify-evenly mx-20 p-2">
-        <p
-          class="
-            rounded-full
-            h-24
-            w-24
-            flex
-            items-center
-            justify-center
-            border-pink-700 border-2
-            font-bold
-          "
-        >
-          Get started
-        </p>
-      </div>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>
