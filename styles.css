@@ -17,6 +17,15 @@
     transform: translateX(1%);
   }
 }
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(160, 50, 238) 0%,
+    rgb(235, 121, 121) 50%,
+    rgb(241, 70, 57) 100%
+  );
+  overflow-x: hidden;
+}
 
 /* The element to apply the animation to */
 #MYDIV {
